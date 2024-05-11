@@ -32,7 +32,7 @@ import java.util.regex.Pattern;
  * a detection or filename scan is performed to find test classes.
  */
 public class DefaultTestClassScanner implements Runnable {
-    private static final Pattern ANONYMOUS_CLASS_NAME = Pattern.compile(".*\\$\\d+");
+    private static final Pattern ANONYMOUS_CLASS_NAME = Pattern.compile(".*\\$\\d+(?:\\$WhenMappings)?");
     private final FileTree candidateClassFiles;
     private final TestFrameworkDetector testFrameworkDetector;
     private final TestClassProcessor testClassProcessor;

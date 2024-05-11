@@ -70,6 +70,7 @@ class DefaultTestClassScannerTest extends Specification {
             assert visitor
             visitor.visitFile(stubFileVisitDetails('AnonymousClass$1'))
             visitor.visitFile(stubFileVisitDetails('AnonymousClass$1$22'))
+            visitor.visitFile(stubFileVisitDetails('AnonymousClass$1$22$WhenMappings'))
         }
 
         0 * _._
